@@ -1,0 +1,23 @@
+.addDogForm {
+  /* No styles */
+}
+
+.formInput {
+  margin: 1rem 0;
+  width: 16rem;
+
+  & > label {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  & > input {
+    width: 100%;
+  }
+}
+
+.formError {
+  color: red;
+  margin-bottom: 1rem;
+}

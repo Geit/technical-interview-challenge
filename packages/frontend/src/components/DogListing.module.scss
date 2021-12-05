@@ -1,0 +1,44 @@
+.dogBreedListContainer {
+  &__headerRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  & > h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+.dogBreedList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 2.5rem;
+}
+
+.dogBreedItem {
+  text-align: center;
+  display: block;
+  width: 8rem;
+  text-decoration: none;
+  color: black;
+
+  &:hover,
+  &:focus {
+    .dogBreedItem__portrait {
+      transform: scale(1.15);
+    }
+  }
+
+  &__portrait {
+    transition: transform 100ms;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: top;
+  }
+}

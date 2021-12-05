@@ -1,0 +1,23 @@
+{
+  "version": "0.0.0",
+  "name": "frontend",
+  "devDependencies": {
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "parcel": "^2.0.1"
+  },
+  "scripts": {
+    "start": "yarn parcel src/index.html",
+    "build": "parcel build src/index.ts",
+    "test": "jest",
+    "check": "tsc --noEmit"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "dependencies": {
+    "@vetspire-tech-test/common": "*",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.0.2",
+    "use-http": "^1.0.26"
+  }
+}
