@@ -52,7 +52,6 @@ const AddDog: React.FC = () => {
     data.append("file", file);
 
     try {
-      console.log("Submitting");
       const result = await put(`/dogs/${breedName}`, data);
 
       if (typeof result === "string") {
@@ -63,7 +62,6 @@ const AddDog: React.FC = () => {
       } else if ("error" in result) {
         setFormError(result.error);
       } else {
-        console.log(result);
         navigate(`/breed/${result.id}`, { replace: true });
       }
     } catch (err) {
